@@ -3,15 +3,16 @@
 ## Bike Shareing System
 자전거 대여 사업은 정부/민간이 대여 체계를 구성하여 이용료를 지불하는 시민들에게 서비스를 제공하는 사업입니다.
 
-자원을 공유하여 사회적 낭비를 감소시킬 수 있는 공유 경제 모델이며, 교통체증 및 환경오염이 감소되는 효과는 물론<br>
-시민들은 이 서비스를 이용하여 적은 비용으로 편리한 이동이 가능합니다.
+자원을 공유하여 사회적 낭비를 감소시킬 수 있는 공유 경제 모델이며,<br>
+교통체증 및 환경오염이 감소되는 효과는 물론 시민들은 이 서비스를 이용하여 적은 비용으로 편리한 이동이 가능합니다.
 
-자전거 대여가 대중들 사이에서 활발히 이루어지기 위해서는 안정적인 자전거 공급을 위해 자전거 대여와 연관된 data들을 살펴볼 필요가 있으며, 직관적인 결과의 지표인 'count' 수의 흐름을 분석할 필요가 있습니다.
+자전거 대여가 대중들 사이에서 활발히 이루어지기 위해서는 안정적인 자전거 공급을 위해<br>
+자전거 대여와 연관된 data들을 살펴볼 필요가 있으며, 직관적인 결과의 지표인 'count' 수의 흐름을 분석할 필요가 있습니다.<br><br>
 
 ## Goal
 1. [Kaggle] 2011 - 2012년 시간당 자전거 대여수 데이터를 이용하여 Test dataset(20일 ~ 말일)의 count 수를 예측
 2. Capital Bike Share의 전반적인 자전거 대여 수 동향 예측 및 분석
-
+<br><br>
 ## Data
 <a href="https://www.kaggle.com/competitions/bike-sharing-demand/data"><img src="https://img.shields.io/badge/-white?style=flat-square&logo=kaggle&logoColor=20BEFF" width=100 /></a> <i>(data link)</i>
 
@@ -37,10 +38,11 @@
 |registered|회원 자전거 대여량 (test.csv (x))|
 |count|총 자전거 대여량 (test.csv (x))|
 
+<br><br>
 ## Evaluation
 1. Kaggle : RMSLE
 2. Overall Data Analysis : MSE, RMSE, R2, Adjusted_R2
-
+<br><br>
 ## Models
 * Linear Regression
 * Ridge
@@ -51,7 +53,7 @@
 * XGBoost (Extreme Gradient Boost)
 * CatBoost
 * LightGBM
-
+<br><br>
 ## Conclusion
 
 1. 사람들은 근무일보다 공휴일에 자전거를 더 많이 대여합니다.
