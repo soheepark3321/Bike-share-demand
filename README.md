@@ -8,12 +8,30 @@
 
 자전거 대여가 대중들 사이에서 활발히 이루어지기 위해서는 안정적인 자전거 공급을 위해 자전거 대여와 연관된 data들을 살펴볼 필요가 있으며, 직관적인 결과의 지표인 'count' 수의 흐름을 분석할 필요가 있습니다.
 
-## Problem Statement
+## Goal
 1. [Kaggle] 2011 - 2012년 시간당 자전거 대여수 데이터를 이용하여 Test dataset(20일 ~ 말일)의 count 수를 예측
 2. Capital Bike Share의 전반적인 자전거 대여 수 동향 예측 및 분석
 
 ## Data
-<a href="https://www.kaggle.com/competitions/bike-sharing-demand/data" target=_blank><img src="https://img.shields.io/badge/-white?style=flat-square&logo=kaggle&logoColor=20BEFF" width=100 /></a>
+<a href="https://www.kaggle.com/competitions/bike-sharing-demand/data"><img src="https://img.shields.io/badge/-white?style=flat-square&logo=kaggle&logoColor=20BEFF" width=100 /></a> <i>(data link)</i>
+* **Train.csv** : 2011 - 2012년 월별 1 ~ 19일 (row)10,886 * (col)12 = 130,632개 data<br>
+* **Test.csv**  : 2011 - 2012년 월별 20 ~ 말일 (row)6,493 * (col) 9 = 58,437개 data<br>
+* Total     : 189,069건
+
+|Coulmn|설명|
+|------|---|
+|datetime|시간 (연/월/일/시/분/초)|
+|season|계절 (봄 : 1 ~ 겨울 : 4)|
+|holiday|주말 (휴일(1), 근무일(0))|
+|workingday|근무일 (근무일(1), 휴일(0))|
+|weather|날씨 (clean : 1, coludy : 2, snow&rain : 3, heavy snow&rain : 4)|
+|temp|온도 (Celsius)|
+|atemp|체감 온도 (Celsius)|
+|humidity|습도|
+|windspeed|풍속|
+|casual|비회원 자전거 대여량 (test.csv (x))|
+|registered|회원 자전거 대여량 (test.csv (x))|
+|count|총 자전거 대여량 (test.csv (x))|
 
 
 <div align=left>
