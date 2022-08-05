@@ -13,10 +13,7 @@
 2. Capital Bike Share의 전반적인 자전거 대여 수 동향 예측 및 분석
 
 ## Data
-  <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/>
-
-!(https://capsule-render.vercel.app/api?type=Rect&height=50&width=50&color=1c92d2)
-https://www.kaggle.com/competitions/bike-sharing-demand/data
+<a href="https://www.kaggle.com/competitions/bike-sharing-demand/data" target=_blank><img src="https://img.shields.io/badge/-white?style=flat-square&logo=kaggle&logoColor=20BEFF" width=100 /></a>
 
 
 <div align=left>
