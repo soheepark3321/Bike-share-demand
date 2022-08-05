@@ -14,12 +14,16 @@
 
 ## Data
 <a href="https://www.kaggle.com/competitions/bike-sharing-demand/data"><img src="https://img.shields.io/badge/-white?style=flat-square&logo=kaggle&logoColor=20BEFF" width=100 /></a> <i>(data link)</i>
+
+해당 dataset은 정형 및 시계열 데이터이며, 지도 학습 및 다중 회귀에 해당됩니다.<br>
+따라서 해당 분석에 (교차검증)scikit-learn의 GridSearchCV과 회귀 모델을 사용하였습니다.
+
 * **Train.csv** : 2011 - 2012년 월별 1 ~ 19일 (row)10,886 * (col)12 = 130,632개 data<br>
 * **Test.csv**  : 2011 - 2012년 월별 20 ~ 말일 (row)6,493 * (col) 9 = 58,437개 data<br>
 * Total     : 189,069건
 
 |Coulmn|설명|
-|------|---|
+|:---:|:---|
 |datetime|시간 (연/월/일/시/분/초)|
 |season|계절 (봄 : 1 ~ 겨울 : 4)|
 |holiday|주말 (휴일(1), 근무일(0))|
@@ -33,6 +37,44 @@
 |registered|회원 자전거 대여량 (test.csv (x))|
 |count|총 자전거 대여량 (test.csv (x))|
 
+## Evaluation
+1. Kaggle : RMSLE
+2. Overall Data Analysis : MSE, RMSE, R2, Adjusted_R2
+
+## Models
+* Linear Regression
+* Ridge
+* Lasso
+* Elasticnet
+* Random Forest
+* Gradient Boosting
+* XGBoost (Extreme Gradient Boost)
+* CatBoost
+* LightGBM
+
+## Conclusion
+
+1. 사람들은 근무일보다 공휴일에 자전거를 더 많이 대여합니다.
+
+2. 자전거가 많이 대여되는 시간은 근무일 기준, 출퇴근 때이고<br>
+공휴일 기준, 늦은 아침부터 오후까지입니다.
+
+3. 근무일 & 휴일 기준, 늦은 저녁 ~ 새벽까지가 대여율이 가장 낮습니다.
+
+4. 자전거를 많이 빌리는 계절은 여름과 가을입니다.<br>
+반대로 봄은 자전거 대여량이 가장 적습니다.
+
+5. 날씨가 화창할 수록 자전거 대여량이 많습니다.<br>
+눈과 비가 많이 오는 날에는 자전거 대여량이 거의 없습니다.
+
+6. 극단적인 온도(너무 춥거나 더움)가 되면 자전거 대여율이 굉장히 낮습니다.<br>
+자전거 대여율은 적당한 온도일 때 높습니다.
+
+7. 전체적으로 앙상블 기법을 이용하는 모델의 성능이 우수하게 나타납니다.<br><br>
+<가장 뛰어난 모델>
+* Test lable 예측 : XGBoost
+* 완전한 2011 - 2012 데이터의 lable 예측 : CatBoost
+***
 
 <div align=left>
 📚 <b>Language<b> 📚  <br> </P>
@@ -50,3 +92,6 @@
 🛠 <b>Tools<b> 🛠<br></P>
 <img src="https://img.shields.io/badge/Anaconda-44A833?style=flat-square&logo=Anaconda&logoColor=green"/>
 <img src="https://img.shields.io/badge/Jupyter Notebook-F37626?style=flat-square&logo=Jupyter&logoColor=white"/></div>
+
+
+![footer](https://capsule-render.vercel.app/api?type=waving&color=0:e1eec3,100:f05053&height=200&text=Personal&nbsp;Project&fontSize=35&fontAlignY=80&fontColor=FF4F8B&animation=fadeIn&section=footer)
